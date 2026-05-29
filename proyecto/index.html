@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Career — CYC v9</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div id="sp"></div>
+
+
+<div class="mob-overlay" id="mob-overlay" onclick="closeMenu()"></div>
+<div class="mob-menu" id="mob-menu" role="navigation" aria-label="Menú móvil">
+  <div class="mob-menu-logo">C<span style="color:var(--white)">YC</span></div>
+  <a href="#INICIO"    onclick="menuNav(event,this)"><span class="mn-icon">🏠</span> Inicio</a>
+  <a href="#ACERCA"    onclick="menuNav(event,this)"><span class="mn-icon">ℹ️</span> Acerca</a>
+  <a href="#TEST"      onclick="menuNav(event,this)"><span class="mn-icon">🎯</span> Test</a>
+  <a href="#CARRERAS"  onclick="menuNav(event,this)"><span class="mn-icon">🎓</span> Carreras</a>
+  <a href="#SUGERENCIAS" onclick="menuNav(event,this)"><span class="mn-icon">💬</span> Sugerencias</a>
+  <a href="#CONTACTO"  onclick="menuNav(event,this)"><span class="mn-icon">📞</span> Contacto</a>
+  <div class="mob-menu-footer">CYC · Plantel San Juan De la Vega</div>
+</div>
+
+
+<header>
+  <button class="ham-btn" id="ham-btn" aria-label="Abrir menú" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="logo">C<span>YC</span></div>
+  <nav class="main-nav">
+    <a href="#INICIO">Inicio</a>
+    <a href="#ACERCA">Acerca</a>
+    <a href="#TEST">Test</a>
+    <a href="#CARRERAS">Carreras</a>
+    <a href="#SUGERENCIAS">Sugerencias</a>
+    <a href="#CONTACTO">Contacto</a>
+  </nav>
+</header>
+
+
+<div id="main-view">
+<div class="container">
+
+  <section id="INICIO">
+    <div class="badge">Plantel San Juan De la Vega · Guanajuato</div>
+    <h1>CHOOSE<br><em>YOUR</em><br>CAREER</h1>
+    <p>CYC te ayuda a descubrir tu camino profesional. Si estás en último año de secundaria o primer semestre de media superior, aquí encontrarás la guía para elegir con confianza.</p>
+  </section>
+
+  <!-- DESPUÉS — pega esto en index.html -->
+<!-- DESPUÉS — pega esto en index.html -->
+<section id="ACERCA">
+  <div class="about-label">Orientación vocacional</div>
+  <h2 class="st">ACERCA <span>DE CYC</span></h2>
+  <p class="about-sub">Todo lo que necesitas saber sobre el proyecto antes de comenzar tu exploración.</p>
+
+  <div class="about-layout">
+
+    <!-- Panel izquierdo: intro + stats -->
+    <div class="about-intro">
+      <div>
+        <div class="about-intro-icon">🎓</div>
+        <h3>¿Qué busca CYC?</h3>
+        <p>Ayudar e impulsar a los estudiantes de nuevo ingreso a elegir su carrera técnica con información clara, orientación práctica y herramientas interactivas.</p>
+      </div>
+      <hr class="about-divider">
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-icon">⏱️</div>
+          <div class="about-stat-text">
+            <strong>Audiencia</strong>
+            Último año de secundaria o primer semestre de media superior
+          </div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-icon">📍</div>
+          <div class="about-stat-text">
+            <strong>Plantel</strong>
+            San Juan De la Vega · Guanajuato
+          </div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-icon">🏭</div>
+          <div class="about-stat-text">
+            <strong>Región industrial</strong>
+            Bajío — una de las zonas con mayor demanda de técnicos en México
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid derecha 2×2 -->
+    <div class="about-grid">
+
+      <div class="about-card">
+        <div class="about-card-head">
+          <div class="about-card-icon">❓</div>
+          <h3>¿Por qué es difícil elegir?</h3>
+        </div>
+        <ul>
+          <li>Presión familiar y social</li>
+          <li>Desconocimiento de las opciones</li>
+          <li>Miedo a la decisión equivocada</li>
+          <li>Falta de orientación vocacional</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <div class="about-card-head">
+          <div class="about-card-icon">📦</div>
+          <h3>¿Qué contiene?</h3>
+        </div>
+        <p>Perfiles detallados de cada carrera, mini-dinámicas interactivas y datos reales del mercado laboral en Guanajuato.</p>
+      </div>
+
+      <div class="about-card about-card--full">
+        <div class="about-card-head">
+          <div class="about-card-icon">🚀</div>
+          <h3>Especialidades disponibles</h3>
+        </div>
+        <div class="about-careers">
+          <div class="about-career-badge"><span>⚙️</span> Producción Industrial</div>
+          <div class="about-career-badge"><span>⚗️</span> Química Industrial</div>
+          <div class="about-career-badge"><span>💻</span> Programación</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+</section>
+  <section id="TEST">
+    <h2 class="st">DESCUBRE TU <span>VOCACIÓN</span></h2>
+    <div class="test-shell">
+      <div class="tscreen active" id="t-intro">
+        <div class="bi">🎯</div>
+        <h2>TEST <span>VOCACIONAL</span></h2>
+        <p>8 preguntas rápidas analizan tus intereses, habilidades y personalidad para encontrar la carrera ideal para ti.</p>
+        <div class="features">
+          <div class="feat"><span>⚡</span> Solo 2 minutos</div>
+          <div class="feat"><span>🧠</span> Análisis inteligente</div>
+          <div class="feat"><span>🏆</span> Ranking de afinidad</div>
+        </div>
+        <button class="start-btn" onclick="startTest()">Comenzar test →</button>
+      </div>
+      <div class="tscreen" id="t-quiz">
+        <div class="q-header">
+          <div class="q-meta">
+            <span class="q-counter" id="qc"></span>
+            <span class="q-label" id="ql"></span>
+          </div>
+          <div class="pt"><div class="pf" id="pf" style="width:0%"></div></div>
+          <div class="q-dots" id="qd"></div>
+        </div>
+        <div class="q-text" id="qt"></div>
+        <div class="og" id="og"></div>
+      </div>
+      <div class="tscreen" id="t-results">
+        <div class="rh"><div class="rc">🏆</div><h2>TU PERFIL VOCACIONAL</h2><p style="font-size:14px;opacity:.5;margin-top:8px;">Ranking de compatibilidad basado en tus respuestas</p></div>
+        <div class="rl" id="rl"></div>
+        <div class="rbs">
+          <button class="rbtn rbtn-g" onclick="restartTest()">↺ Reiniciar</button>
+          <button class="rbtn rbtn-s" onclick="navTo('#CARRERAS')">Explorar carreras</button>
+          <button class="rbtn rbtn-p" id="bb">Ver mi mejor opción →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="CARRERAS">
+    <h2 class="st">ELIGE TU <span>CARRERA</span></h2>
+    <p style="text-align:center;font-size:12px;opacity:.32;margin-bottom:32px;letter-spacing:1px;">— Clic para expandir · Saber más para el detalle completo —</p>
+    <div class="ac">
+      <article class="article" id="card-prod" onclick="toggleCard('prod')">
+        <div class="rbadge" id="rb-prod">⭐ Recomendada para ti</div>
+        <div class="ci">⚙️</div>
+        <h2>Producción Industrial</h2>
+        <p>Coordina procesos de fabricación, controla la calidad y optimiza líneas de producción en la industria del Bajío.</p>
+        <button class="bsm" onclick="openCareer('produccion',event)">Saber más →</button>
+      </article>
+      <article class="article" id="card-quim" onclick="toggleCard('quim')">
+        <div class="rbadge" id="rb-quim">⭐ Recomendada para ti</div>
+        <div class="ci">⚗️</div>
+        <h2>Química Industrial</h2>
+        <p>Domina análisis químicos, procesos industriales y control de calidad en laboratorios y plantas de producción.</p>
+        <button class="bsm" onclick="openCareer('quimica',event)">Saber más →</button>
+      </article>
+      <article class="article" id="card-prog" onclick="toggleCard('prog')">
+        <div class="rbadge" id="rb-prog">⭐ Recomendada para ti</div>
+        <div class="ci">💻</div>
+        <h2>Programación</h2>
+        <p>Desarrolla software, apps web y móviles. Resuelve problemas del mundo real con lógica y código.</p>
+        <button class="bsm" onclick="openCareer('programacion',event)">Saber más →</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="SUGERENCIAS">
+    <h2 class="st">DEJA TU <span>SUGERENCIA</span></h2>
+    <form action="mailto:appcyc@gmail.com" method="post" enctype="text/plain">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+      <label for="sug">Sugerencia</label>
+      <textarea id="sug" name="sugerencia" rows="4" placeholder="¿Qué podemos mejorar o agregar?" required></textarea>
+      <button type="submit">Enviar sugerencia →</button>
+    </form>
+  </section>
+
+</div>
+
+<footer id="CONTACTO">
+  <h2>CONTACTO</h2>
+  <p>📧 appsyo@gmail.com</p>
+  <p>📞 +52 122 456 789</p>
+  <p>📍 México, Gto. — Plantel San Juan De la Vega</p>
+  <p class="copy">© 2025 CYC — Choose Your Career</p>
+</footer>
+</div>
+
+
+<div id="cv"></div>
+
+
+<div class="cv-lightbox" id="cv-lightbox" onclick="closeLightbox(event)">
+  <div class="cv-lightbox-inner" id="cv-lightbox-inner">
+    <button class="cv-lightbox-close" onclick="closeLightbox()">✕</button>
+    <div id="cv-lightbox-content"></div>
+    <div class="cv-lightbox-caption" id="cv-lightbox-caption"></div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
